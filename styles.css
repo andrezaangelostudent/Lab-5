@@ -1,0 +1,52 @@
+figure:hover img { /* create a hover effect */
+    opacity: 0.8;
+}
+
+body {
+
+    font-family: Century Gothic; /* edit the font of the text */
+}
+
+.leaf-container img {
+    float:left; /* edit the images to the left */
+    padding: 10px; /* change the padding*/
+    width: 200px; /* change the width*/
+    height: 200px; /* change the height*/ 
+    fill: #6df62e; /* Fill color */
+    stroke: #45f62e; /* Stroke color (border) */
+}
+
+#scale-button {
+    display: flex; /* diplay after the images*/
+    margin-left: 730px; /* change the margin*/
+    padding: 10px; /* change the padding*/
+    background-color: #eb9721;  /* change the button collor*/
+    color: #070707; /* change the text collor*/
+    border: none;  /* no border*/
+    cursor: pointer; /* change the apperance of the mouse cursor*/
+    font-family: Century Gothic; /* edit the font of the text */
+}
+
+.bordered {
+    border: 5px solid black; /* create a border */
+}
+
+.leaf-container {
+    display:flex; /* display the elements inside figure side by side */
+    align-items: center; /* align the itens to the center */
+    text-align: center; /* align the text to the center */
+    margin-left: 355px; /* align the images to the center */
+  }
+   
+
+figure {
+    display: flex; /* display the images one bellow the other */
+    flex-direction: column; /*align the itens vertically */
+    align-items: center; /* align the itens to the center */
+    text-align: center; /* align the text to the center */
+}
+
+figcaption {
+    text-align: center; /* align the text to the center */
+}
+

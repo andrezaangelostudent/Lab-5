@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"> <!--specify the english language-->
+
+<head>
+<meta charset="UTF-8"> <!--Unicode Transformation Format-->
+<title>Toronto's autumn beauty</title> <!--title of the page-->
+<link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+<figure> 
+<img src="images/Autumn SVG.svg" alt="Autumn leaf text" width="500" height="500" /> <!--image and an alternative text description of the image-->
+<figcaption>Autumn Leaf. Reprinted from freesvg website</figcaption>
+<p> The first image is in SVG format, and it maintains its visual quality and does not experience any changes when the screen is resized or maximized.</p>
+</figure>
+
+<figure> 
+<img class="bordered" src="images/GIF.gif" alt="Trees gif" width="500" height="500" />  <!--image and an alternative text description of the image-->
+<figcaption>Trees in Toronto</figcaption> <!--Description of the image-->
+<p>This image is a GIF, the image is not in high definition and when the screen is maximized the image looses quality.</p>
+</figure>
+
+<figure>
+<img src="images/JPEG.jpg" alt="Yellow trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+<figcaption>Yellow trees</figcaption> <!--Description of the image-->
+<p>This image is in JPEG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+</figure>
+
+<figure>
+<img src="images/JPEG High.jpg" alt="Yellow trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+<figcaption>Yellow trees - High Compression</figcaption> <!--Description of the image-->
+<p>This image is in JPEG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+</figure> 
+
+<figure>
+<img src="images/JPEG Medium.jpg" alt="Yellow trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+<figcaption>Yellow trees - Medium Compression</figcaption> <!--Description of the image-->
+<p>This image is in JPEG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+</figure>
+
+<figure>
+<img src="images/JPEG Low.jpg" alt="Yellow trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+<figcaption>Yellow trees - Low Compression</figcaption> <!--Description of the image-->
+<p>This image is in JPEG format. The quality of the image is good, but when the screen is maximized the image looses quality.</p>
+</figure>
+    
+<figure>
+<img class="bordered" src="images/PNG.png" alt="Red, green and orange trees" width="500" height="500" />    <!--image and an alternative text description of the image-->
+<figcaption>Red, green and orange trees</figcaption> <!--Description of the image-->
+<p>This image is in PNG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+
+</figure>
+
+<figure>
+    <img src="images/PNG 8bits.PNG" alt="Red, green and orange trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+    <figcaption>Red, green and orange trees 8-bit</figcaption> <!--Description of the image-->
+    <p>This image is in PNG format. The quality of the image is good, but when the screen is maximized the image looses quality.</p>
+</figure>
+
+<figure>
+    <img src="images/PNG 24bits.png" alt="Red, green and orange trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+    <figcaption>Red, green and orange trees 24-bit</figcaption> <!--Description of the image-->
+    <p>This image is in PNG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+</figure>
+
+<figure>
+    <img src="images/PNG 8bits compressed.PNG" alt="Red, green and orange trees" width="500" height="500" /> <!--image and an alternative text description of the image-->
+    <figcaption>Red, green and orange trees 8-bit compressed</figcaption> <!--Description of the image-->
+    <p>This image is in PNG format. The quality of the image is good, but when the screen is maximized the image looses quality.</p>
+</figure>    
+
+<div class="leaf-container"> <!--Create a container to encapsulate the two images-->
+
+<figure>
+    <img src="images/Leaf SVG.svg" alt="Leaf SVG" width="200" height="150"/> <!--image and an alternative text description of the image-->
+    <figcaption>Leaf in SVG. Reprinted from freesvg website</figcaption>  <!--Description of the image-->
+    <p>This image is in SVG format. The quality of the image is really good and does not experience any changes when the screen is resized or maximized.</p>
+</figure>
+
+<figure>
+    <img src="images/Leaf_PNG.png" alt="Leaf PNG" width="200" height="150"/> <!--image and an alternative text description of the image-->
+    <figcaption>Leaf in PNG. Reprinted from freesvg website</figcaption>  <!--Description of the image-->
+    <p>This image is in PNG format. The quality of the image is good, but when the width is maximized through the scale up button, the image changes format.</p>
+</figure>
+</div>
+
+<br><br> <!--add space-->
+
+<button id="scale-button">Scale Up</button> <!--Create a button and the name of the button-->
+
+<script> //Script to determinate that when the scale up button is pressed the width of the images inside leaf-container is changed
+    document.getElementById('scale-button').addEventListener('click', function () {
+        const images = document.querySelectorAll('.leaf-container img');
+        images.forEach(function (img) {
+            img.style.width = '500px';
+        });
+    });
+</script>
+<br><br><!--add space-->
+
+<p><em> In conclusion, I observed changes in the characteristics of the images, particularly those that lost quality when the screen was maximized. Creating the interaction for the button and centralizing the images within the leaf container proved to be quite challenging.</em></p>
+<p>Bonus: When I applied the brightness, contrast, and grayscale filters to the images, I observed that GIF and PNG images were not significantly modified. In contrast, JPEG and SVG images underwent noticeable changes, with their colors appearing lighter.</p>
+</body>
+</html>
